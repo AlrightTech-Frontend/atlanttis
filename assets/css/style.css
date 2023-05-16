@@ -228,15 +228,8 @@ border: 1px solid rgba(238, 49, 36, 0.36);
 border-radius: 5px;
 
 }
-
-
-
 /*  ##################>media Query Start <############# */
-
-
- 
 @media (max-width:768px){
-
     .log-left{
     background-color: var(--black);
    position: relative;
