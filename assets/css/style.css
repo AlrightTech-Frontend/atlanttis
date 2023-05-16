@@ -24,11 +24,24 @@
   border-radius: 15rem 15rem 0 0;
   position: relative;
 }
+.full-circle{
+    width: 300px !important;
+    height: 300px !important;
+     border-radius:  50%;
+     background: #FFFFFF;
+box-shadow: inset 0px 4px 52px rgba(0, 0, 0, 0.72);
+}
 
 .log-logo{
     width: 80%;
     position: absolute;
     bottom: 0px;
+    left: 50px;
+}
+.forgetpass{
+     width: 80%;
+    position: absolute;
+    top: 50px;
     left: 50px;
 }
 .left-content p{
@@ -185,7 +198,13 @@ text-decoration: none;
 
    
 }
+.foget-pass{
+    height: 100vh !important;
+}
 
+.forgetpass_input::placeholder{
+    text-align: left !important;
+}
 /*  ##################>media Query Start <############# */
 
 
@@ -197,7 +216,9 @@ text-decoration: none;
    position: relative;
     height:120vh;
 }
-    
+.foget-pass{
+    height: 140vh !important;
+}    
 }
 @media(max-width:400px)
 {
@@ -207,5 +228,12 @@ text-decoration: none;
   background-color:var(--white);
   border-radius: 10rem 10rem 0 0;
   position: relative;
+}
+.full-circle{
+    width: 300px !important;
+    height: 300px !important;
+     border-radius:  50%;
+     background: #FFFFFF;
+box-shadow: inset 0px 4px 52px rgba(0, 0, 0, 0.72);
 }
 }
