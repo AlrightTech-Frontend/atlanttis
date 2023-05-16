@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --black:black;
+  --heading-color:#EE3124;
+  --paragragh-color:#929292;
+  --paragraph-p:#A2A2A2;
+
+
+}
+
+
+.log-left{
+    background-color: var(--black);
+   position: relative;
+ height: 106vh; 
+}
+ 
+.semi-circle {
+  width: 22rem;
+  height: 15rem;
+  background-color:var(--white);
+  border-radius: 15rem 15rem 0 0;
+  position: relative;
+}
+
+.log-logo{
+    width: 80%;
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+}
+.left-content p{
+    
+    position: absolute;
+    left: 13%;
+
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 36px;
+text-align: center;
+
+color: var(--white);
+}
+
+
+
+
+.log_main_heading h1{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+line-height: 58px;
+/* identical to box height */
+
+color:var(--heading-color);
+}
+
+
+.log_main_heading p{
+     font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height */
+
+
+color: var(--paragraph-p);
+}
+.log-input-btn{
+    width: 100%;
+    height: 60px;
+
+   
+}
+.log-input{
+    padding-left: 10px;
+    padding-right: 10px;
+ background: rgba(162, 162, 162, 0.07);
+border: 1px solid rgba(238, 49, 36, 0.36);
+border-radius: 8px;
+}
+.log-input::placeholder{
+    text-align: center;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+
+color: rgba(238, 49, 36, 0.36);
+}
+.forgetpass a{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 36px;
+/* identical to box height */
+
+text-decoration: none;
+color: var(--heading-color);
+margin-bottom: 50px;
+}
+.button_log{
+    background-color: var(--heading-color);
+
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 36px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+}
+.button_log:hover{
+    background-color: var(--heading-color);
+    color: #FFFFFF;
+}
+.button_google{
+    background: rgba(162, 162, 162, 0.07);
+border-radius: 8px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 36px;
+/* identical to box height */
+
+
+color:var(--paragragh-color);
+}
+
+.button_google:hover{
+    background: rgba(162, 162, 162, 0.07);
+border-radius: 8px;
+
+ 
+
+color:var(--paragragh-color);
+}
+.goto-signup{
+    
+    text-align: center;
+
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+
+color: var(--paragraph-p);
+
+   
+}
+
+.goto-signup a{
+    
+    text-align: center;
+
+ font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+
+color: #EE3124;
+
+color: var(--heading-color);
+text-decoration: none;
+
+   
+}
+
+/*  ##################>media Query Start <############# */
+
+
+ 
+@media (max-width:768px){
+
+    .log-left{
+    background-color: var(--black);
+   position: relative;
+    height:120vh;
+}
+    
+}
+@media(max-width:400px)
+{
+    .semi-circle {
+  width: 18rem;
+  height: 13rem;
+  background-color:var(--white);
+  border-radius: 10rem 10rem 0 0;
+  position: relative;
+}
+}
