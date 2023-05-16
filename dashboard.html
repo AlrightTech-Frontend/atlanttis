@@ -162,6 +162,12 @@ color: #636363;
         transition: 0.5s;
         
     }
+    @media only screen and (max-width: 600px){
+        .dasNav{
+            flex-direction: column;
+        }
+	/*Big smartphones [426px -> 600px]*/
+}
     </style>
   </head>
 
@@ -763,7 +769,7 @@ color: #636363;
                       <p class="pa2">Welcome Super Admin</p>
                     </li>
                     <li class="nav-item pt7 ms-3">
-                      <a class="nav-link d-flex" href="#"
+                      <a class="nav-link d-flex " href="#"
                         ><svg
                           width="25"
                           height="23"
@@ -780,7 +786,7 @@ color: #636363;
                       </a>
                     </li>
                   </ul>
-                  <div class="d-flex justify-content-between">
+                  <div class="d-flex justify-content-between dasNav">
                     <span class="mx-3"
                       ><svg
                         width="25"
@@ -1004,7 +1010,7 @@ color: #636363;
                       <div class="tab-content">
                         <div class="tab-pane fade show active" id="visitor-graph">
                           <!-- Visitor Graph content goes here -->
-                          <canvas id="areaChart"></canvas>
+                          <canvas id="areaChart" height="270px"></canvas>
                         </div>
                         <div class="tab-pane fade" id="latest-products">
                           <!-- Latest Products content goes here -->
