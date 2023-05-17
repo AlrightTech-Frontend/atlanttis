@@ -162,10 +162,29 @@ color: #636363;
         transition: 0.5s;
         
     }
-    @media only screen and (max-width: 600px){
+    .dd{
+      display: none;
+    }
+    .sideClose{
+      display: none;
+    }
+    @media only screen and (max-width: 768px){
         .dasNav{
-            flex-direction: column;
+            /* flex-direction: column; */
+            display: none !important;
         }
+        .dd{
+          display: block;
+        }
+        .ddm{
+          left:-102px !important
+        }
+        .sideClose{
+      display: block;
+    }
+    #mainContent{
+      display: none;
+    }
 	/*Big smartphones [426px -> 600px]*/
 }
     </style>
@@ -174,10 +193,14 @@ color: #636363;
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3 px-0" id="sideBar">
+        <div class="col-12 col-sm-12 col-md-3 px-0" id="sideBar">
           <div class="sidebar">
-            <p class="text-center pa1">Atlanntis Retail</p>
-            <!-- Sidebar content goes here -->
+            <div class="d-flex justify-content-between">
+              <p class="text-center pa1">Atlanntis Retail</p>
+              <!-- Sidebar content goes here -->
+              <span class="sideClose" id="sideCancel"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+              </svg></span></div>
             <div>
               <div class="d-flex align-items-center">
                 <img
@@ -188,7 +211,10 @@ color: #636363;
                 />
                 <p class="pa3 ms-4 mt-3">Dashboard</p>
               </div>
-              <div class="d-flex my-2 justify-content-between myselect">
+              <div class="d-flex my-2 justify-content-between myselect"  data-bs-toggle="collapse"
+              data-bs-target="#collapseLayouts"
+              aria-expanded="false"
+              aria-controls="collapseLayouts">
                 <img
                   src="./assets/img/catalog.png"
                   width="25px"
@@ -199,10 +225,7 @@ color: #636363;
                   <a
                     class="nav-link collapsed d-flex justify-content-between"
                     href="#"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseLayouts"
-                    aria-expanded="false"
-                    aria-controls="collapseLayouts"
+                   
                   >
                     <p class="pa3">CataLog</p>
                     <div class="sb-nav-link-icon ms-5 ps-5">
@@ -231,7 +254,10 @@ color: #636363;
                   </div>
                 </div>
               </div>
-              <div class="d-flex my-2 justify-content-between myselect">
+              <div class="d-flex my-2 justify-content-between myselect"   data-bs-toggle="collapse"
+              data-bs-target="#collapseLayouts2"
+              aria-expanded="false"
+              aria-controls="collapseLayouts">
                 <svg
                   width="27"
                   height="23"
@@ -249,10 +275,7 @@ color: #636363;
                   <a
                     class="nav-link collapsed d-flex justify-content-between"
                     href="#"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseLayouts2"
-                    aria-expanded="false"
-                    aria-controls="collapseLayouts"
+                  
                   >
                     <p class="pa3">Order</p>
                     <div class="sb-nav-link-icon ms-5 ps-5">
@@ -281,7 +304,10 @@ color: #636363;
                   </div>
                 </div>
               </div>
-              <div class="d-flex my-2 justify-content-between myselect">
+              <div class="d-flex my-2 justify-content-between myselect"  data-bs-toggle="collapse"
+              data-bs-target="#collapseLayouts3"
+              aria-expanded="false"
+              aria-controls="collapseLayouts" >
                 <svg
                   width="23"
                   height="24"
@@ -299,10 +325,7 @@ color: #636363;
                   <a
                     class="nav-link collapsed d-flex justify-content-between"
                     href="#"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseLayouts3"
-                    aria-expanded="false"
-                    aria-controls="collapseLayouts"
+                   
                   >
                     <p class="pa3">Admin</p>
                     <div class="sb-nav-link-icon ms-5 ps-5">
@@ -331,7 +354,10 @@ color: #636363;
                   </div>
                 </div>
               </div>
-              <div class="d-flex my-2 justify-content-between myselect">
+              <div class="d-flex my-2 justify-content-between myselect"   data-bs-toggle="collapse"
+              data-bs-target="#collapseLayouts4"
+              aria-expanded="false"
+              aria-controls="collapseLayouts" >
                 <svg
                   width="22"
                   height="23"
@@ -349,10 +375,7 @@ color: #636363;
                   <a
                     class="nav-link collapsed d-flex justify-content-between"
                     href="#"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseLayouts4"
-                    aria-expanded="false"
-                    aria-controls="collapseLayouts"
+                  
                   >
                     <p class="pa3">Vendors</p>
                     <div class="sb-nav-link-icon ms-5 ps-5">
@@ -381,7 +404,10 @@ color: #636363;
                   </div>
                 </div>
               </div>
-              <div class="d-flex my-2 justify-content-between myselect">
+              <div class="d-flex my-2 justify-content-between myselect"  data-bs-toggle="collapse"
+              data-bs-target="#collapseLayouts5"
+              aria-expanded="false"
+              aria-controls="collapseLayouts" >
                 <svg
                   width="27"
                   height="27"
@@ -399,10 +425,7 @@ color: #636363;
                   <a
                     class="nav-link collapsed d-flex justify-content-between"
                     href="#"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseLayouts5"
-                    aria-expanded="false"
-                    aria-controls="collapseLayouts"
+                  
                   >
                     <p class="pa3">Super Desk</p>
                     <div class="sb-nav-link-icon ms-5 ps-5">
@@ -431,7 +454,10 @@ color: #636363;
                   </div>
                 </div>
               </div>
-              <div class="d-flex my-2 justify-content-between myselect">
+              <div class="d-flex my-2 justify-content-between myselect"   data-bs-toggle="collapse"
+              data-bs-target="#collapseLayouts6"
+              aria-expanded="false"
+              aria-controls="collapseLayouts" >
                 <svg
                   width="27"
                   height="24"
@@ -449,10 +475,7 @@ color: #636363;
                   <a
                     class="nav-link collapsed d-flex justify-content-between"
                     href="#"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseLayouts6"
-                    aria-expanded="false"
-                    aria-controls="collapseLayouts"
+                  
                   >
                     <p class="pa3">Appearence</p>
                     <div class="sb-nav-link-icon ms-5 ps-5">
@@ -481,7 +504,10 @@ color: #636363;
                   </div>
                 </div>
               </div>
-              <div class="d-flex my-2 justify-content-between myselect">
+              <div class="d-flex my-2 justify-content-between myselect"   data-bs-toggle="collapse"
+              data-bs-target="#collapseLayouts7"
+              aria-expanded="false"
+              aria-controls="collapseLayouts" >
                 <svg
                   width="27"
                   height="24"
@@ -499,10 +525,7 @@ color: #636363;
                   <a
                     class="nav-link collapsed d-flex justify-content-between"
                     href="#"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseLayouts7"
-                    aria-expanded="false"
-                    aria-controls="collapseLayouts"
+                  
                   >
                     <p class="pa3">promotions</p>
                     <div class="sb-nav-link-icon ms-5 ps-5">
@@ -531,7 +554,10 @@ color: #636363;
                   </div>
                 </div>
               </div>
-              <div class="d-flex my-2 justify-content-between myselect">
+              <div class="d-flex my-2 justify-content-between myselect"   data-bs-toggle="collapse"
+              data-bs-target="#collapseLayouts8"
+              aria-expanded="false"
+              aria-controls="collapseLayouts" >
                 <svg
                   width="27"
                   height="24"
@@ -549,10 +575,7 @@ color: #636363;
                   <a
                     class="nav-link collapsed d-flex justify-content-between"
                     href="#"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseLayouts8"
-                    aria-expanded="false"
-                    aria-controls="collapseLayouts"
+                  
                   >
                     <p class="pa3">packages</p>
                     <div class="sb-nav-link-icon ms-5 ps-5">
@@ -581,7 +604,10 @@ color: #636363;
                   </div>
                 </div>
               </div>
-              <div class="d-flex my-2 justify-content-between myselect">
+              <div class="d-flex my-2 justify-content-between myselect"  data-bs-toggle="collapse"
+              data-bs-target="#collapseLayouts9"
+              aria-expanded="false"
+              aria-controls="collapseLayouts" >
                 <svg
                   width="27"
                   height="24"
@@ -599,10 +625,7 @@ color: #636363;
                   <a
                     class="nav-link collapsed d-flex justify-content-between"
                     href="#"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseLayouts9"
-                    aria-expanded="false"
-                    aria-controls="collapseLayouts"
+                   
                   >
                     <p class="pa3">setting</p>
                     <div class="sb-nav-link-icon ms-5 ps-5">
@@ -631,7 +654,10 @@ color: #636363;
                   </div>
                 </div>
               </div>
-              <div class="d-flex my-2 justify-content-between myselect">
+              <div class="d-flex my-2 justify-content-between myselect"    data-bs-toggle="collapse"
+              data-bs-target="#collapseLayouts10"
+              aria-expanded="false"
+              aria-controls="collapseLayouts" >
                 <svg
                   width="27"
                   height="25"
@@ -649,10 +675,7 @@ color: #636363;
                   <a
                     class="nav-link collapsed d-flex justify-content-between"
                     href="#"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseLayouts10"
-                    aria-expanded="false"
-                    aria-controls="collapseLayouts"
+                 
                   >
                     <p class="pa3">Utilities</p>
                     <div class="sb-nav-link-icon ms-5 ps-5">
@@ -681,7 +704,10 @@ color: #636363;
                   </div>
                 </div>
               </div>
-              <div class="d-flex my-2 justify-content-between myselect">
+              <div class="d-flex my-2 justify-content-between myselect"   data-bs-toggle="collapse"
+              data-bs-target="#collapseLayouts11"
+              aria-expanded="false"
+              aria-controls="collapseLayouts" >
                 <svg
                   width="27"
                   height="23"
@@ -699,10 +725,7 @@ color: #636363;
                   <a
                     class="nav-link collapsed d-flex justify-content-between"
                     href="#"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseLayouts11"
-                    aria-expanded="false"
-                    aria-controls="collapseLayouts"
+                  
                   >
                     <p class="pa3">Reports</p>
                     <div class="sb-nav-link-icon ms-5 ps-5">
@@ -734,11 +757,11 @@ color: #636363;
             </div>
           </div>
         </div>
-        <div class="col-md-9 ps-0" id="mainContent">
+        <div class="col-12 col-sm-12 col-md-9 ps-0 " id="mainContent">
           <div class="content px-2">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
               <div class="container-fluid">
-                <button id="sidebarToggle" class="btn">
+                <button id="sidebarToggle" class="btn ">
                   <svg
                     width="24"
                     height="16"
@@ -753,7 +776,7 @@ color: #636363;
                   </svg>
                 </button>
                 <button
-                  class="navbar-toggler"
+                  class="navbar-toggler d-none"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarText"
@@ -763,6 +786,97 @@ color: #636363;
                 >
                   <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- drop down on small screen -->
+                <div class="dropdown dd">
+                  <button class="btn  " type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                      <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    </svg>
+                  </button>
+                  
+                  <ul class="dropdown-menu ddm" aria-labelledby="dropdownMenuButton2">
+                     <li>    <a class="dropdown-item d-flex " href="#"
+                      ><svg
+                        width="25"
+                        height="23"
+                        viewBox="0 0 25 23"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M24.6737 7.9713L18.4236 14.08C17.7648 14.724 16.6667 14.2465 16.6667 13.2962V10.0635C10.3917 10.1071 7.74453 11.6408 9.51497 17.761C9.70955 18.4336 8.95742 18.9544 8.42964 18.5395C6.73837 17.2098 5.20833 14.6665 5.20833 12.0992C5.20833 5.6333 10.3125 4.3502 16.6667 4.31372V1.07867C16.6667 0.127498 17.7655 -0.348404 18.4236 0.294877L24.6737 6.40371C25.1086 6.82881 25.1089 7.54585 24.6737 7.9713ZM16.6667 17.0311V20.125H2.77778V5.75001H4.98767C5.05781 5.74996 5.12721 5.73524 5.19172 5.70673C5.25622 5.67822 5.31449 5.63652 5.36302 5.58411C6.01202 4.88477 6.7622 4.33124 7.57717 3.89164C8.06024 3.63104 7.88125 2.87501 7.3365 2.87501H2.08333C0.932726 2.87501 0 3.84038 0 5.03126V20.8437C0 22.0346 0.932726 23 2.08333 23H17.3611C18.5117 23 19.4444 22.0346 19.4444 20.8437V16.8544C19.4444 16.4821 19.0887 16.2225 18.7495 16.3467C18.274 16.5208 17.7648 16.5728 17.2656 16.4984C16.9501 16.4514 16.6667 16.7012 16.6667 17.0311Z"
+                          fill="black"
+                        />
+                      </svg>
+                      <p class="pa2 px-2">Store Front</p>
+                    </a></li>
+                    <li><a class="dropdown-item " href="#"><span class=""
+                      ><svg
+                        width="25"
+                        height="19"
+                        viewBox="0 0 25 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M24.5264 6.19141C24.7168 6.04004 25 6.18164 25 6.4209V16.4062C25 17.7002 23.9502 18.75 22.6562 18.75H2.34375C1.0498 18.75 0 17.7002 0 16.4062V6.42578C0 6.18164 0.27832 6.04492 0.473633 6.19629C1.56738 7.0459 3.01758 8.125 7.99805 11.7432C9.02832 12.4951 10.7666 14.0771 12.5 14.0674C14.2432 14.082 16.0156 12.4658 17.0068 11.7432C21.9873 8.125 23.4326 7.04102 24.5264 6.19141ZM12.5 12.5C13.6328 12.5195 15.2637 11.0742 16.084 10.4785C22.5635 5.77637 23.0566 5.36621 24.5508 4.19434C24.834 3.97461 25 3.63281 25 3.27148V2.34375C25 1.0498 23.9502 0 22.6562 0H2.34375C1.0498 0 0 1.0498 0 2.34375V3.27148C0 3.63281 0.166016 3.96973 0.449219 4.19434C1.94336 5.36133 2.43652 5.77637 8.91602 10.4785C9.73633 11.0742 11.3672 12.5195 12.5 12.5Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </span></a></li>
+                    <li><a class="dropdown-item" href="#"> <span class=""
+                      ><svg
+                        width="22"
+                        height="25"
+                        viewBox="0 0 22 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20.723 18.3716L20.7226 18.3712C20.6697 18.3144 20.6118 18.2536 20.5496 18.1885C20.0937 17.7105 19.4111 16.995 18.85 15.8589C18.2095 14.562 17.7461 12.7742 17.7461 10.1562C17.7461 6.86213 15.4445 4.21328 12.2957 3.55918L11.4991 3.39369V2.58008V1.5625C11.4991 1.25138 11.2469 1 10.9375 1C10.6281 1 10.376 1.25138 10.376 1.5625V2.58008V3.39369L9.5794 3.55918C6.4306 4.21328 4.12894 6.86213 4.12894 10.1562C4.12894 12.7742 3.66558 14.562 3.02507 15.8589C2.46402 16.995 1.78141 17.7105 1.32549 18.1885C1.26337 18.2536 1.20545 18.3143 1.15263 18.371L20.723 18.3716ZM20.723 18.3716C20.8361 18.493 20.8759 18.6213 20.8751 18.7434L20.8751 18.7439M20.723 18.3716L20.8751 18.7439M20.8751 18.7439C20.8732 19.0546 20.6334 19.3125 20.3076 19.3125H1.56742C1.24224 19.3125 1.00215 19.0551 1.00001 18.7434L20.8751 18.7439ZM12.8117 22.875C12.4541 23.5446 11.7486 24 10.9375 24C10.1265 24 9.42099 23.5446 9.06339 22.875H12.8117ZM1.00001 18.7433C0.999228 18.6218 1.03867 18.4936 1.15248 18.3712L1.00001 18.7433Z"
+                          stroke="black"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </span></a></li>
+                    <li><a class="dropdown-item" href="#"> <span class="">
+                      <svg
+                        width="25"
+                        height="23"
+                        viewBox="0 0 25 23"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M25 10.4167C25 9.39106 24.4379 8.50521 23.6111 8.02431V1.38932C23.6111 1.00955 23.3082 0 22.2222 0C21.9132 0 21.6063 0.103299 21.355 0.304688L17.6645 3.25738C15.8108 4.73915 13.4835 5.55556 11.1111 5.55556H2.77778C1.24349 5.55556 0 6.79905 0 8.33333V12.5C0 14.0343 1.24349 15.2778 2.77778 15.2778H4.24045C4.18012 15.7326 4.14583 16.1953 4.14583 16.6667C4.14583 18.3928 4.54774 20.0239 5.25521 21.4818C5.48047 21.9457 5.97222 22.2222 6.48785 22.2222H9.71181C10.8424 22.2222 11.5213 20.9271 10.8359 20.0278C10.1241 19.0937 9.70095 17.9288 9.70095 16.6667C9.70095 16.1845 9.77127 15.7209 9.89236 15.2778H11.1111C13.4835 15.2778 15.8108 16.0942 17.6641 17.576L21.3546 20.5286C21.6007 20.7256 21.9065 20.8331 22.2218 20.8333C23.3034 20.8333 23.6107 19.8446 23.6107 19.4444V12.8095C24.4379 12.3281 25 11.4423 25 10.4167ZM20.8333 16.5547L19.3989 15.4071C17.0551 13.5321 14.1111 12.5 11.1111 12.5V8.33333C14.1111 8.33333 17.0551 7.30121 19.3989 5.42621L20.8333 4.27865V16.5547Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </span></a></li>
+                    <li><a href="#" class="dropdown-item">  <span class=" d-flex">
+                      <img class="" src="./assets/img/adphoto.png" />
+                      <a href="#" class="nav-link fw-bold mx-2"> Account</a>
+                    </span></a></li>
+                    <li><a class="dropdown-item" href="#"> <span class="d-flex">
+                      <span class="pt-0">
+                        <svg
+                          width="17"
+                          height="13"
+                          viewBox="0 0 17 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.7647 7.07507L11.0978 12.7616C10.5918 13.2693 9.71477 12.9139 9.71477 12.1862V8.93674H5.12724C4.67861 8.93674 4.31767 8.57456 4.31767 8.12437V4.87491C4.31767 4.42472 4.67861 4.06255 5.12724 4.06255H9.71477V0.813085C9.71477 0.0887261 10.5884 -0.270068 11.0978 0.23766L16.7647 5.92421C17.0784 6.24239 17.0784 6.75689 16.7647 7.07507ZM6.47651 12.5924V11.2384C6.47651 11.015 6.29436 10.8323 6.07173 10.8323H3.23826C2.6412 10.8323 2.15884 10.3482 2.15884 9.7491V3.25018C2.15884 2.65106 2.6412 2.16703 3.23826 2.16703H6.07173C6.29436 2.16703 6.47651 1.98424 6.47651 1.76084V0.406902C6.47651 0.183502 6.29436 0.00071991 6.07173 0.00071991H3.23826C1.45047 0.00071991 0 1.45621 0 3.25018V9.7491C0 11.5431 1.45047 12.9986 3.23826 12.9986H6.07173C6.29436 12.9986 6.47651 12.8158 6.47651 12.5924Z"
+                            fill="black"
+                          />
+                        </svg>
+                      </span>
+                      <a href="#" class="nav-link fw-bold mx-2">LogOut</a>
+                    </span></a></li>
+                  </ul>
+                </div>
+                <!-- drop down on small screen end -->
                 <div class="collapse navbar-collapse" id="navbarText">
                   <ul class="navbar-nav me-auto ps-3 mb-2 mb-lg-0">
                     <li class="nav-item d-flex pt6">
@@ -857,8 +971,8 @@ color: #636363;
             </nav>
             <!-- Main content goes here -->
             <di class="row my-2">
-              <div class="col-md-3 cards my-2">
-                <div class="d-flex">
+              <div class="col-12 col-sm-12 col-md-3 cards my-2">
+                <div class="d-flex justify-content-sm-between">
                   <div
                     class="visitor d-flex justify-content-center bgVisit py-4 px-4"
                   >
@@ -891,8 +1005,8 @@ color: #636363;
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 cards my-2">
-                <div class="d-flex">
+              <div class="col-12 col-sm-12 col-md-3 cards my-2">
+                <div class="d-flex justify-content-sm-between">
                   <div
                     class="visitor d-flex justify-content-center bgMerchant py-4 px-4"
                   >
@@ -925,8 +1039,8 @@ color: #636363;
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 cards my-2">
-                <div class="d-flex">
+              <div class="col-12 col-sm-12 col-md-3 cards my-2">
+                <div class="d-flex justify-content-sm-between">
                   <div
                     class="visitor d-flex justify-content-center bgSales py-4 px-4"
                   >
@@ -959,8 +1073,8 @@ color: #636363;
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 cards my-2">
-                <div class="d-flex">
+              <div class="col-12 col-sm-12 col-md-3 cards my-2">
+                <div class="d-flex justify-content-sm-between">
                   <div
                     class="visitor d-flex justify-content-center bgIncrease py-4 px-4"
                   >
@@ -1094,7 +1208,17 @@ color: #636363;
           $("#sideBar").toggleClass("activ");
           $("#mainContent").toggleClass("col-md-9");
           $("#mainContent").toggleClass("col-md-12");
+          $("#mainContent").removeClass("d-block");
+          // $("#mainContent").toggleClass("col-12");
+          // $("#mainContent").toggleClass("col-sm-12");
+          // $("#mainContent").toggleClass("col-5");
+          // $("#mainContent").toggleClass("col-sm-5");
+         
         });
+        $("#sideCancel").click(function(){
+          $("#sideBar").toggleClass("activ");
+          $("#mainContent").toggleClass("d-block");
+        })
       });
      let select=document.querySelectorAll('.myselect')
      select.forEach(element=>{
