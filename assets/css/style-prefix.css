@@ -2269,8 +2269,7 @@ footer {
 
 .footer-nav {
   border-bottom: 1px solid var(--onyx);
-  padding-bottom: 30px;
-  margin-bottom: 30px;
+ 
 }
 
 .footer-nav-list:not(:last-child) {
@@ -2280,21 +2279,12 @@ footer {
 .footer-nav .nav-title {
   position: relative;
   color: var(--white);
-  font-size: var(--fs-7);
+  font-size: 20px;
   text-transform: uppercase;
-  margin-bottom: 15px;
-  padding-bottom: 5px;
+ 
 }
 
-.footer-nav .nav-title::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: var(--salmon-pink);
-  width: 60px;
-  height: 1px;
-}
+ 
 
 .footer-nav-item {
   padding: 3px 0;
@@ -2305,8 +2295,9 @@ footer {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  color: var(--sonic-silver);
+  color:white;
   font-size: var(--fs-7);
+  text-decoration: none;
   text-transform: capitalize;
   -webkit-transition: var(--transition-timing);
   -o-transition: var(--transition-timing);
@@ -2314,7 +2305,7 @@ footer {
 }
 
 .footer-nav-link:hover {
-  color: var(--salmon-pink);
+  color: rgb(238, 49, 36);
 }
 
 .footer-nav-item.flex {
@@ -2331,7 +2322,7 @@ footer {
 
 .footer-nav-item .content {
   font-style: normal;
-  margin-bottom: 5px;
+ 
 }
 
 .footer-nav-item .icon-box {
@@ -3483,9 +3474,7 @@ footer {
     padding-bottom: 35px;
   }
 
-  .footer-nav {
-    padding-bottom: 50px;
-  }
+   
 }
 
 /**
@@ -3589,3 +3578,99 @@ color: #EE3124;
 }
 
 /* Slider End  */
+
+
+
+
+
+
+
+/*    free ship Start  */
+
+.freeshipimg{
+  width: 100%;
+  height: 300px;
+}
+.freeshipmain{
+  position: relative;
+}
+.freeship_intern{
+  padding-top: 40px;
+  padding-left: 50px;
+  position: absolute !important;
+  bottom: 120px;
+}
+.freeship_intern h1{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+}
+.freeship_intern p{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 31px;
+
+color: #FFFFFF;
+
+}
+
+.freeship_intern button {
+  background: #ee3124 !important;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  color: white !important;
+  position: absolute;
+  
+}
+
+
+/* free ship End  */
+
+
+
+
+/* Footer Start  */
+
+.footinput{
+  position: relative;
+}
+.footinput input{
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  padding-left: 10px;
+}
+.footinput button{
+  position: absolute;
+  bottom: 0px;
+  height: 50px;
+  padding: 10px;
+ background: #EE3124;
+border-radius: 41px;
+right: 0px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 24px;
+
+color: #FFFFFF;
+}
+.underline-footer{
+  width: 100%;
+  height: 2px;
+  background-color:#929292;
+}
+/* Footer End  */

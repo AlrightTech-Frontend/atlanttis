@@ -182,3 +182,8 @@ for (let i = 0; i < accordionBtn.length; i++) {
 
 
 
+
+// offers slider Start
+ 
+// Offers Slider End 
+
