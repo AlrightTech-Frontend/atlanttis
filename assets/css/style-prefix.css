@@ -3129,9 +3129,7 @@ footer {
     transition: var(--transition-timing);
   }
 
-  .panel-list-item a:hover {
-    color: var(--salmon-pink);
-  }
+  
 
   .panel-list-item:not(:last-child) a {
     padding: 4px 0;
@@ -3191,10 +3189,7 @@ footer {
     transition: var(--transition-timing);
   }
 
-  .dropdown-list .dropdown-item a:hover {
-    color: var(--salmon-pink);
-  }
-
+ 
   .mobile-bottom-navigation {
     display: none;
   }
@@ -3795,4 +3790,13 @@ color: #636363;
 background: rgba(132, 124, 124, 0.13);
 border: none;
 outline: none;
+}
+ 
+
+@media(min-width:1024px)
+{
+  .product-sidebar{
+    display: none !important;
+  }
+
 }
