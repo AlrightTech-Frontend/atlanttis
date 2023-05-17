@@ -178,4 +178,7 @@ for (let i = 0; i < accordionBtn.length; i++) {
 
         });
  
-// slider end 
+// slider end
+
+
+
