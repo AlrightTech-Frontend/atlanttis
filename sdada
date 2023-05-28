@@ -1,0 +1,114 @@
+<div class="product-main">
+
+                        <h2 class="title">New Products</h2>
+
+                        <div class="product-grid">
+
+                            <div class="showcase">
+
+                                <div class="showcase-banner">
+
+                                    <img src="./assets/img/product-card.png" alt="Mens Winter Leathers Jackets"
+                                        width="300" class="product-img default">
+                                    <img src="./assets/images/products/jacket-4.jpg" alt="Mens Winter Leathers Jackets"
+                                        width="300" class="product-img hover">
+
+
+
+
+                                </div>
+
+                                <div class="p-3">
+
+
+                                    <a href="#" class="product_title">
+                                        <h2>Mens Winter Leathers Jackets</h2>
+                                    </a>
+
+
+
+                                    <div class="d-flex justify-content-between mt-5">
+                                        <p class="product_rupee">$48.00</p>
+                                        <p class="product_new">New</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="showcase">
+
+                                <div class="showcase-banner">
+
+                                    <img src="./assets/img/product-card.png" alt="Mens Winter Leathers Jackets"
+                                        width="300" class="product-img default">
+                                    <img src="./assets/images/products/jacket-4.jpg" alt="Mens Winter Leathers Jackets"
+                                        width="300" class="product-img hover">
+
+
+
+
+                                </div>
+
+                                <div class="p-3">
+
+
+                                    <a href="#" class="product_title">
+                                        <h2>Mens Winter Leathers Jackets</h2>
+                                    </a>
+
+
+
+                                    <div class="d-flex justify-content-between mt-5">
+                                        <p class="product_rupee">$48.00</p>
+                                        <p class="product_new">New</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="showcase">
+
+                                <div class="showcase-banner">
+
+                                    <img src="./assets/img/product-card.png" alt="Mens Winter Leathers Jackets"
+                                        width="300" class="product-img default">
+                                    <img src="./assets/images/products/jacket-4.jpg" alt="Mens Winter Leathers Jackets"
+                                        width="300" class="product-img hover">
+
+
+
+
+                                </div>
+
+                                <div class="p-3">
+
+
+                                    <a href="#" class="product_title">
+                                        <h2>Mens Winter Leathers Jackets</h2>
+                                    </a>
+
+
+
+                                    <div class="d-flex justify-content-between mt-5">
+                                        <p class="product_rupee">$48.00</p>
+                                        <p class="product_new">New</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+                    </div>
